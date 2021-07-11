@@ -1,4 +1,4 @@
-phrases = [
+list_of_phrases = [
     'Far Cry from',
     'Fool and His Money Are Soon Parted',
     'Worst Comes to Worst',

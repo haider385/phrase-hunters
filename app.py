@@ -1,7 +1,13 @@
-# Import your Game class
+from phrasehunter.game import Game
+from phrasehunter.phrases_list import list_of_phrases
+from random import choice
 
-# Create your Dunder Main statement.
-
-# Inside Dunder Main:
-## Create an instance of your Game class
-## Start your game by calling the instance method that starts the game loop
+if __name__ == '__main__':
+    playing = True
+    while playing:
+        game = Game(list_of_phrases)
+        game.start()
+        again = input("Enter 'Y' if you would like to play again: ")
+        if again.strip().lower() != 'y':
+            print("Thanks for playing!")
+            playing = False
