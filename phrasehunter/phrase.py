@@ -12,8 +12,6 @@ class Phrase:
         self.hidden = hidden
 
     def check_letter(self, guess):
-        """remember that each letter must have a space after
-           it in order to be matched against letters in  list"""
         if guess.lower() in ''.join(self.phrase_list).lower():
             for i in range(len(self.phrase_list)):
                 if self.phrase_list[i].lower() == guess.lower():
