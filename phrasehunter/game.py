@@ -10,10 +10,10 @@ class Game:
     def get_guess(self):
         guess = input("\nGuess a letter: ").lower().strip()
         if len(guess) != 1 or guess.isalpha() == False:
-            if guess not in self.guesses:
-                print("That is not a valid guess, try again.")
-            else:
-                print("You have already guessed that letter, try again.")
+            print("That is not a valid guess, try again.")
+            return False
+        elif guess.lower() in self.guesses:
+            print("You have already guessed that letter, try again.")
             return False
         return guess
 
@@ -29,7 +29,7 @@ class Game:
             guess = False
             while not guess:
                 guess = self.get_guess()
-            self.guesses.append(guess)
+            self.guesses.append(guess.lower())
             if self.phrase.check_letter(guess):
                 print("Well done! You guessed a correct letter.\n")
             else:

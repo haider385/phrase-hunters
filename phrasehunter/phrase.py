@@ -6,7 +6,7 @@ class Phrase:
         hidden = []
         for letter in self.phrase_list:
             if letter == ' ':
-                hidden.append('/')
+                hidden.append(' ')
             else:
                 hidden.append('_')
         self.hidden = hidden
