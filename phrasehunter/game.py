@@ -1,6 +1,7 @@
 from phrasehunter.phrase import Phrase
 from random import choice
 
+
 class Game:
     def __init__(self, phrases):
         self.phrase = Phrase(choice(phrases))
@@ -9,7 +10,7 @@ class Game:
 
     def get_guess(self):
         guess = input("\nGuess a letter: ").lower().strip()
-        if len(guess) != 1 or guess.isalpha() == False:
+        if len(guess) != 1 or not guess.isalpha():
             print("That is not a valid guess, try again.")
             return False
         elif guess.lower() in self.guesses:
@@ -19,8 +20,8 @@ class Game:
 
     def welcome(self):
         print("Hello! Welcome to the Phrase Hunter Game.\n" +
-              "Guess a letter each turn. If incorrect, you will lose a life.\n" +
-              "You have 5 lives. Can you guess the phrase?\n")
+              "Guess a letter each turn. If incorrect, you will lose a life." +
+              "\nYou have 5 lives. Can you guess the phrase?\n")
 
     def start(self):
         self.welcome()
