@@ -2,6 +2,7 @@ from phrasehunter.game import Game
 from phrasehunter.phrases_list import list_of_phrases
 from random import choice
 
+
 if __name__ == '__main__':
     playing = True
     while playing:
