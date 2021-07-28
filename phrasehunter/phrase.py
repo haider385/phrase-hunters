@@ -1,5 +1,5 @@
 class Phrase:
-    
+
     def __init__(self, phrase):
         self.phrase = phrase
         self.phrase_list = list(phrase)
