@@ -29,4 +29,12 @@ list_of_phrases = [
     'To each his own',
     'What Do You Make of',
     'When It Rains It Pours',
+    'A foot in the door',
+    'A knight in shining armour',
+    'A leopard cannot change its spots',
+    'A man after my own heart',
+    'Cloak and dagger',
+    'Curiosity killed the cat',
+    'Dead as a doornail',
+    'Down in the dumps',
 ]
