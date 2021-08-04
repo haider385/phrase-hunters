@@ -1,2 +1,2 @@
 # phrase hunters
- 
+ A game where the user is prompted to guess letters from a phrase. At the start, all letters from the phrase are displayed as underscores. Everytime the user guesses a correct letter, it will be revealed and displayed within the phrase. For each incorrect guess, the user will lose a life. The user has 5 lives in order to guess the whole phrase. Once the user has guessed the phrase or ran out of lives, they are able to exit the program or play again with a new phrase.
